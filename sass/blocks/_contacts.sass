@@ -3,7 +3,7 @@
   background: linear-gradient(180deg, #271C3A 0%, #000000 42.04%)
   .container
     padding-top: 80px
-    padding-bottom: 175px
+    padding-bottom: 126px
   &__bg
     position: absolute
     left: 0
@@ -54,10 +54,17 @@
   &__work
     margin-top: 24px
     width: 350px
-    height: 236px
+    height: 285px
     border: 1px solid $white
     border-radius: 20px
     padding: 25px 60px
+    &-title
+      width: 100%
+      text-transform: uppercase
+      text-align: center
+      font-size: 24px
+      line-height: 29px
+      margin-bottom: 20px
     &-first, &-second, &-third
       width: 100%
       display: flex
@@ -67,6 +74,7 @@
         font-family: 'Russo One'
         font-size: 24px
         line-height: 29px
+        text-transform: uppercase
     &-first, &-second
       margin-bottom: 4px
     &-second, &-third
@@ -74,6 +82,8 @@
         &:nth-child(1)
           padding-top: 4px
           border-top: 2px solid $white
+        &:nth-child(2)
+          padding-top: 5px
     &--left
       display: flex
       align-items: center
