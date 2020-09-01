@@ -1,0 +1,69 @@
+.masters
+  background-color: $main-color
+  .container
+    padding-top: 80px
+    padding-bottom: 100px
+  &__title
+    width: 100%
+    text-align: center
+    font-size: 40px
+    line-height: 48px
+    margin-bottom: 80px
+    text-transform: uppercase
+    letter-spacing: 3px
+  &__tabs
+    width: 100%
+    display: flex
+    align-items: flex-start
+    border: 1px solid $white
+    border-radius: 20px
+    height: 625px
+  &__left
+    width: 70%
+    height: 100%
+    border-radius: 20px 0 0 20px
+  &__right
+    width: 30%
+    height: 100%
+    border-left: 1px solid $white
+    border-radius: 0 20px 20px 0
+  &__master
+    position: relative
+    padding: 42px 30px
+    border-bottom: 1px solid $white
+    cursor: pointer
+    &:nth-child(5)
+      border-bottom: none
+    span
+      display: block
+      width: 100%
+      font-family: 'Marck Script'
+      font-size: 33px
+      line-height: 41px
+      text-align: center
+    &:hover
+      span
+        color: $tab-color
+    &--active
+      span
+        color: $tab-color
+      .masters
+        &__cube
+          display: block
+  &__cube
+    display: none
+    position: absolute
+    left: -21px
+    top: 50%
+    width: 40px
+    height: 40px
+    transform: translateY(-50%)
+    div
+      width: 100%
+      height: 100%
+      transform: rotate(45deg)
+      border-left: 1px solid $tab-color
+      border-bottom: 1px solid $tab-color
+
+
+        
