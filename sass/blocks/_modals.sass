@@ -1,0 +1,210 @@
+.modal-service
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 100
+  background-color: $main-color
+  &--active
+    display: block
+  &__background
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+  &__image
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+  &__gradient
+    position: absolute
+    top: 0
+    right: 0
+    width: 200px
+    height: 100%
+  &__back
+    position: absolute
+    left: 60px
+    bottom: 60px
+    width: 60px
+    height: 35px
+    display: flex
+    align-items: center
+    justify-content: center
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.8) 0%, rgba(38, 27, 56, 0.8) 100%)
+    border: 2px solid $white
+    border-radius: 20px
+  &--first
+    .modal-service
+      &__image
+        width: 650px
+  &--second
+    .modal-service
+      &__image
+        width: 1000px
+  &--third
+    .modal-service
+      &__image
+        width: 650px
+      &__gradient
+        width: 100%
+  &__price
+    &-list
+      position: absolute
+      top: 65px
+      right: 65px
+      width: 750px
+      display: flex
+      flex-direction: column
+      align-items: center
+  &__title
+    font-size: 40px
+    line-height: 48px
+    text-transform: uppercase
+    margin-bottom: 30px
+    letter-spacing: 3px
+  &__list
+    display: flex
+    flex-direction: column
+    width: 100%
+    align-items: center
+    margin-bottom: 65px
+    max-height: 475px
+    overflow-y: scroll
+    &-item
+      width: 100%
+      min-height: 50px
+      border: 2px solid $white
+      border-radius: 20px
+      margin-bottom: 10px
+      padding-left: 40px
+      padding-right: 40px
+      overflow: hidden
+      display: flex
+      align-items: center
+      justify-content: space-between
+      span
+        font-family: 'Russo One'
+        font-size: 24px
+        line-height: 29px
+      &:last-child
+        margin-bottom: 0
+  &__button
+    width: 255px
+    height: 60px
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: inherit
+    border: 3px solid $white
+    border-radius: 50px
+    span
+      font-family: 'Russo One'
+      color: $white
+      font-size: 22px
+      line-height: 33px
+      text-transform: uppercase
+      filter: drop-shadow(0px 4px 6px rgba(255, 255, 255, 0.4))
+  &__masters
+    display: none
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    &--active
+      display: block
+    &-bg
+      width: 100%
+      height: 100%
+    &-cards
+      display: flex
+      align-items: center
+      justify-content: space-between
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+    &-card
+      position: relative
+      width: 350px
+      height: 400px
+      border-radius: 20px
+      margin-right: 20px
+      &:nth-child(3n), &:last-child
+        margin-right: 0
+      img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        border-radius: 20px
+      &:hover
+        .modal-service
+          &__masters
+            &-wrapper
+              display: block
+              cursor: pointer
+    &-wrapper
+      display: none
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: rgba(39, 28, 57, 0.7)
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25)
+      border-radius: 20px
+      padding: 25px
+    &-content
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      width: 100%
+      height: 100%
+      padding-top: 30px
+      padding-bottom: 25px
+      border: 1px solid $white
+      border-radius: 20px
+    &-title
+      font-size: 32px
+      line-height: 54px
+      text-align: center
+    &-description
+      display: flex
+      flex-direction: column
+      align-items: center
+    &-text
+      font-size: 24px
+      line-height: 40px
+    &-tel
+      font-size: 24px
+      line-height: 40px
+    &-button
+      width: 120px
+      height: 40px
+      display: flex
+      align-items: center
+      justify-content: center
+      background: linear-gradient(270deg, rgba(0, 0, 0, 0.8) 0%, rgba(38, 27, 56, 0.8) 100%)
+      border-radius: 20px
+      span
+        color: $white
+        font-size: 12px
+        line-height: 15px
+        text-transform: uppercase
+    &-close
+      position: absolute
+      top: 65px
+      right: 65px
+      cursor: pointer
+
+
+
+    

@@ -16,6 +16,10 @@
     color: rgba(255, 255, 255, 0.5)
     &:last-child
       margin-right: 0
-    &:hover
-      color: $white
-      border-bottom: 1px solid $white
+
+.hvr-underline-from-center
+  &:hover
+    color: $white
+  &::before
+    height: 2px
+    background: $white
